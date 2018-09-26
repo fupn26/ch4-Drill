@@ -7,7 +7,7 @@ int second;
 const string small = "the smaller value is: ";
 const string large = "the larger value is: ";
 const string equal = "the numbers are equal";
-cout<<"Please enter two integers!\n";
+cout<<"Please enter two numbers!\n";
 while (cin>>first>>second)
 	{
 	if (first == second)
