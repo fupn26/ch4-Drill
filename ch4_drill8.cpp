@@ -26,7 +26,7 @@ while (cin>>num>>unit)
 //		largest = num;
 //		init = false;
 //		}
-//	else if (unit == 'm' num < smallest)
+//	else if (num < smallest)
 //		{
 //		cout<<small;
 //		smallest = num;
