@@ -5,13 +5,13 @@ int main()
 bool init = true;
 double num;
 string unit;
+double sum;
+double num_of_values;
 double smallest = 0;
 double largest = 0;
 const double m_cm = 100;
 const double in_cm = 2.54;
 const double ft_in = 12;
-const string small = "This is the smallest so far.\n";
-const string large = "This is the largest so far.\n";
 cout<<"Accepted units: cm, m, in, ft\n";
 cout<<"Please enter numbers with one of the units above!\n";
 while (cin>>num>>unit)
@@ -26,6 +26,8 @@ while (cin>>num>>unit)
 		num = num*in_cm/m_cm;
 	else
 		cout<<"Sorry, your unit is not supported!\n";
+	sum += num;
+	++num_of_values;
 	if (init)
 		{
 		smallest = num;
@@ -34,14 +36,13 @@ while (cin>>num>>unit)
 		}
 	else if (num < smallest)
 		{
-		cout<<small;
 		smallest = num;
 		}
 	else if (largest < num)
 		{
-		cout<<large;
 		largest = num;
 		} 
 	}
+cout<<"The smallest: "<<smallest<<"\nThe largest: "<<largest<<"\nThe number of values: "<<num_of_values<<"\nThe sum of values: "<<sum<<'\n';
 return 0;
 }
