@@ -24,6 +24,6 @@ while (cin>>first>>second)
 		if (second - first < 1.0/100)
 			cout<<"the numbers are almost equal\n";
 		}
-	return 0;
 	}
+return 0;
 }
