@@ -14,7 +14,7 @@ while(cin>>first>>second)
 	else if (second > first)
 	cout<<small<<second<<'\n'<<large<<first<<'\n';
 	else cout<<"the first value is: "<<first<<'\n'<<"the second value is: "<<second<<'\n';
-	return 0;
 	}
+return 0;
 }
 
