@@ -58,7 +58,7 @@ while (cin>>num>>unit)
 		largest = num;
 		} 
 	}
-sort(values);
+sort(values); //11-es feladat
 for (int i = 0; i != values.size(); ++i)
 	{
 	cout<<values[i]<<'\n';
