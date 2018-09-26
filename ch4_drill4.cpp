@@ -16,6 +16,6 @@ while (cin>>first>>second)
 	cout<<small<<first<<'\n'<<large<<second<<'\n';
 	else if (first > second)
 	cout<<small<<second<<'\n'<<large<<first<<'\n';
-	return 0;
 	}
+return 0;
 }
